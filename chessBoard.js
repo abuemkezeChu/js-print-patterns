@@ -1,4 +1,5 @@
-let boardSize = 8;
+let chessBoard = function () {
+  let boardSize = 8;
 
 for(let row = 1; row <= boardSize; row++){
   let board = ''
@@ -7,9 +8,11 @@ for(let row = 1; row <= boardSize; row++){
       board += '#' + '  '
     }
     else {
-      board += ' ' + ' '
+      board += '  ' + ' '
     }
   }
   console.log(board);
 }
+}
 
+chessBoard()
